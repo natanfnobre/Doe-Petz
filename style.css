@@ -1,0 +1,405 @@
+/* Importa uma fonte externa do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+/* Importa outra fonte externa com vários pesos */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fbfbfb;
+}
+
+.header {
+    padding: 32px;
+    box-shadow: 0px 1px 10px #0000001a;
+    background-color: #ff8800;
+}
+
+.logomarca {
+    width: 12vw;
+}
+
+.titulo {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 4rem;
+    color: #33303e;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.links-navegacao {
+    display: flex;
+    list-style-type: none;
+}
+
+.links-navegacao li a {
+    padding: 0;
+    margin: 16px;
+    color: #fbfbfb;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+li.cadastrar a{
+    padding: 8px;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: #d1a52a;
+}
+
+li.cadastrar a:hover {
+    font-size: 1.4rem;
+    padding: 10px 13px;
+    transition: 0.5s;
+}
+
+.painel-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 128px;
+    margin-top: 20px;
+}
+
+.anuncio-petz {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.botao-principal {
+    font-size: 19px;
+    font-family: "Mochiy Pop One", sans-serif;
+    padding: 16px 32px;
+    background-color: #ff950d;
+    color: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+    display: flex;
+    margin-left: 30vw;
+}
+
+.descricao {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #4e4b59;
+}
+
+/* ================= SEGUNDA SEÇÃO ================= */
+
+.segunda-secao{
+    display: flex;                 /* Flexbox */
+    flex-direction: row;           /* Linha */
+    justify-content: space-around; /* Espaço igual */
+    align-items: center;           /* Centraliza verticalmente */
+    width: 100%;                   /* Largura total */
+    background-color: #ec768640;   /* Fundo com transparência */
+    height: 500px;                 /* Altura fixa */
+}
+
+/* Cards de categorias */
+.cachorros, 
+.gatos, 
+.hamsters{
+    display: flex;                 /* Flexbox */
+    flex-direction: column;        /* Em coluna */
+    align-items: center;           /* Centraliza */
+    gap: 10px;                     /* Espaço entre imagem e botão */
+}
+
+/* Botões das categorias */
+.botao_cachorro, 
+.botao_gato, 
+.botao_hamster {
+    font-size: 19px;               /* Tamanho do texto */
+    font-family: 'Mochiy Pop One', sans-serif; /* Fonte */
+    width: 280px;                  /* Largura fixa */
+    padding: 15px 0;               /* Espaçamento interno */
+    background-color: #ff950d;     /* Cor de fundo */
+    color: #f5f5f5;                /* Cor do texto */
+    border-radius: 10px;           /* Bordas arredondadas */
+    border: 1px solid #f5f5f5;     /* Borda */
+    cursor: pointer;               /* Cursor de clique */
+
+    display: flex;                 /* Flexbox */
+    justify-content: center;       /* Centraliza horizontalmente */
+    align-items: center;           /* Centraliza verticalmente */
+    text-decoration: none;         /* Remove sublinhado dos links */
+
+    transition: transform 0.2s, background-color 0.2s; /* Animação */
+}
+
+/* Hover dos botões */
+.botao_cachorro:hover, 
+.botao_gato:hover, 
+.botao_hamster:hover {
+    background-color: #e68600;     /* Escurece a cor */
+    transform: scale(1.05);        /* Aumenta levemente */
+}
+
+
+/* ================= TERCEIRA SEÇÃO ================= */
+
+/* Seção que contém os depoimentos */
+.terceira-secao{
+    display: flex;                 /* Ativa o Flexbox */
+    flex-direction: column;        /* Organiza os elementos em coluna */
+    justify-content: space-evenly; /* Distribui o espaço verticalmente de forma igual */
+    align-items: center;           /* Centraliza os itens horizontalmente */
+    width: 100%;                   /* Ocupa toda a largura da tela */
+    height: 400px;                 /* Altura fixa da seção */
+}
+
+/* Estilo do título h2 (Depoimentos) */
+h2{
+    font-family:'Mochiy Pop One', sans-serif; /* Fonte personalizada */
+    font-size: 2.5em;             /* Tamanho da fonte relativo ao padrão */
+}
+
+/* Container que agrupa os cards de depoimentos */
+.conteudos{
+    display: flex;                /* Coloca os depoimentos lado a lado */
+    gap: 200px;                   /* Espaço grande entre os cards */
+}
+
+/* Card individual de depoimento */
+.depoimentos{
+    display: flex;                /* Organiza imagem e texto lado a lado */
+    width: 35vw;                  /* Largura proporcional à tela */
+    height: 200px;                /* Altura fixa do card */
+    background-color: #c3c2c7;    /* Fundo cinza claro */
+    border-radius: 8px;           /* Cantos arredondados */
+}
+
+/* Área do texto dentro do card */
+.depoimento{
+    display: flex;                /* Flexbox para alinhar texto */
+    flex-direction: column;       /* Texto em coluna */
+    align-items: center;          /* Centraliza horizontalmente */
+    justify-content: center;      /* Centraliza verticalmente */
+    width: 30vw;                  /* Largura limitada do texto */
+    margin-left: 20px;            /* Espaço entre imagem e texto */
+}
+
+/* ================= RODAPÉ ================= */
+
+/* Estilo geral do rodapé */
+.rodape{
+    background-color: #ff8800;    /* Cor de fundo laranja */
+}
+
+/* Conteúdo interno do rodapé */
+.conteudo-rodape{
+    display: flex;                /* Flexbox */
+    justify-content: space-between; /* Espaça os blocos */
+    align-items: center;          /* Centraliza verticalmente */
+    width: 85%;                   /* Largura do conteúdo */
+    margin: 0 auto;               /* Centraliza o rodapé na página */
+    padding: 12px;                /* Espaçamento interno */
+    font-weight: 500;             /* Peso médio da fonte */
+}
+
+/* Lista de informações do rodapé */
+.lista ul{
+    font-family:'Mochiy Pop One', sans-serif; /* Fonte personalizada */
+    font-size: 1.2em;             /* Tamanho da fonte */
+}
+
+/* Área das redes sociais */
+.redes-sociais{
+    display: flex;                /* Flexbox */
+    flex-direction: column;       /* Organiza em coluna */
+    align-items: center;          /* Centraliza horizontalmente */
+    gap: 0 8px;                   /* (Linha inválida, sobrescrita abaixo) */
+    font-size: 20px;              /* Tamanho do texto */
+    font-weight: 500;             /* Peso médio */
+    color: #f5f5f5 !important;    /* Força a cor branca */
+    gap: 10px;                    /* Espaçamento entre elementos */
+}
+
+/* Texto de direitos autorais */
+.copyright{
+    padding-bottom: 16px;         /* Espaço abaixo do texto */
+    text-align: center;           /* Centraliza o texto */
+    color: #f5f5f5;               /* Cor branca */
+}
+
+/* ================= RESPONSIVIDADE MOBILE ================= */
+
+/* Esconde o checkbox do menu hambúrguer */
+#menu-check {
+    display: none;                /* Checkbox invisível */
+}
+
+/* Regras que só funcionam em telas até 768px */
+@media (max-width: 768px) {
+
+    /* Ícone do menu hambúrguer */
+    .menu-burguer {
+        display: block;           /* Mostra o ícone */
+        cursor: pointer;          /* Cursor de clique */
+        order: 2;                 /* Muda a ordem no Flexbox */
+    }
+
+    /* Cada linha do ícone hambúrguer */
+    .menu-burguer span {
+        display: block;           /* Cada span vira um bloco */
+        width: 30px;              /* Largura da linha */
+        height: 3px;              /* Altura da linha */
+        background-color: #fff;   /* Cor branca */
+        margin: 6px 0;            /* Espaço entre as linhas */
+        transition: 0.3s;         /* Animação suave */
+    }
+
+    /* Menu de navegação no mobile */
+    .links-navegacao {
+        display: none;            /* Começa escondido */
+        flex-direction: column;   /* Links empilhados */
+        position: absolute;       /* Sai do fluxo normal */
+        top: 110px;               /* Distância do topo */
+        left: 0;                  /* Alinha à esquerda */
+        width: 100%;              /* Ocupa toda a tela */
+        background-color: #ff8800;/* Fundo laranja */
+        padding: 20px 0;          /* Espaçamento interno */
+        text-align: center;       /* Centraliza o texto */
+        z-index: 10;              /* Fica acima de outros elementos */
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1); /* Sombra */
+    }
+
+    /* Mostra o menu quando o checkbox estiver marcado */
+    #menu-check:checked ~ .links-navegacao {
+        display: flex;            /* Exibe o menu */
+    }
+
+    /* Espaçamento entre os links no mobile */
+    .links-navegacao li {
+        margin: 15px 0;
+    }
+
+    /* Logo maior no mobile */
+    .logomarca {
+        width: 35vw;
+    }
+
+    /* Seção principal no mobile */
+    .painel-principal {
+        flex-direction: column-reverse; /* Muda a ordem */
+        text-align: center;             /* Centraliza texto */
+        margin-bottom: 50px;            /* Espaço inferior */
+    }
+
+    /* Texto principal ocupa tudo */
+    .anuncio-petz {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* Ajuste do título no mobile */
+    .titulo {
+        font-size: 28px;
+        line-height: 2.2rem;
+    }
+
+    /* Ajuste do texto no mobile */
+    .descricao {
+        font-size: 18px;
+    }
+
+    /* Centraliza o botão */
+    .botao-principal {
+        margin-left: 0;
+    }
+
+    /* Esconde imagens no mobile */
+    .imagens-petz {
+        display: none;
+    }
+
+    /* Segunda seção empilhada */
+    .segunda-secao {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    /* Terceira seção adaptável */
+    .terceira-secao {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    /* Depoimentos empilhados */
+    .conteudos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Card de depoimento no mobile */
+    .depoimentos {
+        width: 90%;
+        height: auto;
+        min-height: 150px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    /* Texto ocupa todo o espaço */
+    .depoimento {
+        width: 100%;
+        margin-left: 15px;
+        text-align: left;
+    }
+
+    /* Imagem do depoimento */
+    .depoimentos img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* Texto do depoimento */
+    .depoimento p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    /* Rodapé empilhado no mobile */
+    .conteudo-rodape {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    /* Remove padding padrão da lista */
+    .lista ul {
+        padding: 0;
+    }
+}
